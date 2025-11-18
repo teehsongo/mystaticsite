@@ -1,0 +1,131 @@
+<!--This is an online CV created by using HTML-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--The metadata is shown here-->
+        <title>My Online CV</title> 
+    </head>
+    <body> 
+        <!--Styling the CV using CSS, I used internal styling-->
+        <style>
+            h1 { text-align: center; font-size: 400%; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;} 
+            h2 { text-align: center; font-size: 200%; }
+            body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; } 
+            img { display: block; margin-left: auto; margin-right: auto; border-radius: 60%; }
+            p { text-align: center; font-size: 90%; }
+            body { background-color: #f0f0f0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            a { display: flex; justify-content: center; font-size:  90%; color: blue; text-decoration: none; }
+            table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+            th, td { border: 1px solid #ddd; padding: 8px; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            tr:hover { background-color: #f1f1f1; }
+            th, td { border: 1px solid black; padding: 8px; text-align: left; }
+            th { background-color: #e2e2e2; }
+            ul { list-style-type: square; }
+            li { margin: 5px 0; }
+            ol { margin: 5px 0; }
+            form { margin: 20px; }
+            label { display: block; margin-bottom: 5px; border-radius: 5px;}
+            input[type="text"], input[type="email"], textarea { width: 100%; 
+                   padding: 10px;
+                 margin-bottom: 10px; border-radius: 5px; }
+            button { display: flex; justify-content: center; 
+                padding: 10px 20px; background-color: #808080; 
+                color: white; border: 2px ; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }     
+    </style>
+    <!--The h1 element has my name for viewers to easily identify the owner of the CV-->
+        <h1>TALENT TUTSHINI</h1>
+        <!-- Image -->
+            <img src="GREY GIRL.jpg" alt="Photo" width="200" height="200">
+            <!-- Contact details -->
+             <p>Contact Number: +27 78 123 4567</p>
+            <p>Email: talent09@gmail.com</p>
+             <a href="http:/linkedin.com/in/talentutshini">My Linkedin Profile </a>
+            <p>123 Main Street, Cape Town, South Africa</p>
+           <hr>
+           <!-- The profession -->
+           <p><b>SOFTWARE ENGINEER</b></p>
+           <hr>
+           <!--About Me -->
+           <h2>About Me</h2>
+               <p>I am a passionate Software Engineer with a strong foundation in programming languages and web development. I enjoy solving complex problems and creating efficient solutions. I am eager to learn and grow in the field of software development.</p>
+              <p>With my 3 years of experience, I am motivated by opportunities to collaborate and contribute to meaningful projects. I’m particularly interested in software development, web development, and mobile application development. My goal is to continue expanding my skills and work on transformative initiatives that align with my vision.</p>
+               <hr>
+            <!-- Education -->   
+           <h2>Education</h2>
+           <table>
+              <tr>
+                  <th>Degree</th>
+                  <th>Institution</th>
+                  <th>Year</th>
+             </tr>
+              <tr>
+                  <td>BSc Computer Science</td>
+                  <td>University of Cape Town</td>
+                  <td>2023</td>
+              </tr>
+            <tr>
+                <td>Software Engineering</td>
+                <td>HyperionDev</td>
+                <td>2025</td>
+            </tr>
+        </table>
+        <hr>
+        <!-- Skills -->
+        <h2>Skills</h2>
+            <ul>
+               <li>Python</li>
+               <li>JavaScript</li>
+               <li>HTML & CSS</li>
+               <li>React</li>
+            </ul>  
+            <hr> 
+        <!-- Work Experience -->    
+        <h2>Work Experience </h2>
+        <ul>
+            <li>Intern at Code Company</li>
+            <li>Worked on web development projects using HTML, CSS, and JavaScript.</li>
+            <li>Assisted in developing a mobile application using React Native.
+            </li>
+            <li>Collaborated with a team of developers to design and implement software solutions.
+            </li> 
+        </ul>
+        <hr>
+        <!-- Projects -->
+        <h2>Projects</h2>
+        <ol>
+            <li>Portfolio Website</li>
+            <li>Task Management App</li>
+            <li>Financial Calculator</li>
+            <li>Weather App</li>
+        </ol>
+        <hr>
+        <h2>References</h2>
+        <p>Available upon request.</p>
+        <hr>
+       <!-- Forms -->
+    <h2>Search the CV</h2>
+    <form method="GET" action="/search">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="query" placeholder="Enter keyword">
+        <button type="submit">Search</button>
+    </form>
+
+    <h2>Contact Me</h2>
+    <form method="POST" action="/contact">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>      
+    </body>
+
+</html>
